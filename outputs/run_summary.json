@@ -1,0 +1,49 @@
+{
+  "validation": {
+    "v1_clean": {
+      "quotes": 50000,
+      "mismatches": 0,
+      "match_rate": 1.0
+    },
+    "v2_clean": {
+      "quotes": 50000,
+      "mismatches": 0,
+      "match_rate": 1.0
+    },
+    "v2_defective": {
+      "quotes": 50000,
+      "mismatches": 50000,
+      "defects_caught": 23,
+      "defects_total": 23
+    }
+  },
+  "dislocation": {
+    "n_policies": 120000,
+    "min_change_pct": -0.089744,
+    "avg_change_pct": 0.025188,
+    "max_change_pct": 0.181104,
+    "capped_increases": 99,
+    "capped_decreases": 0,
+    "avg_capped_change_pct": 0.025171
+  },
+  "monitoring": {
+    "n_events": 2160,
+    "anomalies_seeded": 3,
+    "anomalies_detected": 3,
+    "all_within_24h": true,
+    "alerts": [
+      {
+        "kind": "RATE_DRIFT",
+        "latency_hours": 1
+      },
+      {
+        "kind": "STALE_FACTOR_USAGE",
+        "latency_hours": 1
+      },
+      {
+        "kind": "TERRITORY_MISMAPPING",
+        "latency_hours": 1
+      }
+    ]
+  }
+}

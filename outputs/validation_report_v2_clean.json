@@ -1,0 +1,12 @@
+{
+  "version": "v2",
+  "engine_tables": "/home/hatch/workspace/github-projects/rate-validation-post-deploy-monitoring/data/rate_tables/clean/v2",
+  "quotes_tested": 50000,
+  "mismatches": 0,
+  "match_rate": 1.0,
+  "distinct_signatures": 0,
+  "signatures": [],
+  "defects_total": 0,
+  "defects_caught": 0,
+  "defects": []
+}

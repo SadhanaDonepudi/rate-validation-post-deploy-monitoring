@@ -1,0 +1,58 @@
+{
+  "n_events": 2160,
+  "hours_simulated": 72,
+  "anomalies_seeded": 3,
+  "anomalies": [
+    {
+      "id": "ANOM-01",
+      "kind": "RATE_DRIFT",
+      "start_hour": 10,
+      "end_hour": null,
+      "description": "TX-02 live factor drifts +1.5%/hour from the deployed value."
+    },
+    {
+      "id": "ANOM-02",
+      "kind": "STALE_FACTOR_USAGE",
+      "start_hour": 30,
+      "end_hour": 36,
+      "description": "8% of events rated with superseded v1 tables (lagging node)."
+    },
+    {
+      "id": "ANOM-03",
+      "kind": "TERRITORY_MISMAPPING",
+      "start_hour": 50,
+      "end_hour": 56,
+      "description": "Stale ZIP map routes FL-01 policies to territory FL-02."
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "ALT-001",
+      "kind": "RATE_DRIFT",
+      "detected_at_hour": 11,
+      "anomaly_start_hour": 10,
+      "detection_latency_hours": 1,
+      "detail": "1/30 sampled events deviate > $0.50 from reference (rate 3.33% > 2.00%); worst territory TX-02 (mean deviation $2.59)."
+    },
+    {
+      "alert_id": "ALT-002",
+      "kind": "STALE_FACTOR_USAGE",
+      "detected_at_hour": 31,
+      "anomaly_start_hour": 30,
+      "detection_latency_hours": 1,
+      "detail": "4/30 events on superseded rate version (stale rate 13.33% > 0.50%)."
+    },
+    {
+      "alert_id": "ALT-003",
+      "kind": "TERRITORY_MISMAPPING",
+      "detected_at_hour": 51,
+      "anomaly_start_hour": 50,
+      "detection_latency_hours": 1,
+      "detail": "1/30 sampled events mis-mapped (rate 3.33% > 2.00%); worst territory FL-01."
+    }
+  ],
+  "alerts_fired": 3,
+  "anomalies_detected": 3,
+  "max_detection_latency_hours": 1,
+  "all_within_24h": true
+}

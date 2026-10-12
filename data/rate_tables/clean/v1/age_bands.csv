@@ -1,0 +1,6 @@
+version,band_id,band_label,min_age,max_age,factor
+v1,AB-1,0-1,0,1,1.1
+v1,AB-2,2-3,2,3,1.0
+v1,AB-3,4-6,4,6,1.05
+v1,AB-4,7-9,7,9,1.2
+v1,AB-5,10+,10,99,1.45

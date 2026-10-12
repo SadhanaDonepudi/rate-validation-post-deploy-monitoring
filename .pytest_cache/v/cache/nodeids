@@ -1,0 +1,12 @@
+[
+  "tests/test_rate_validation.py::test_all_23_planted_defects_caught",
+  "tests/test_rate_validation.py::test_all_anomalies_detected_within_24h",
+  "tests/test_rate_validation.py::test_capping_bounds_respected",
+  "tests/test_rate_validation.py::test_clean_tables_100_percent_match",
+  "tests/test_rate_validation.py::test_defective_run_still_rates_all_quotes",
+  "tests/test_rate_validation.py::test_dislocation_min_max_avg_sanity",
+  "tests/test_rate_validation.py::test_dislocation_policy_count",
+  "tests/test_rate_validation.py::test_excel_workbook_exists",
+  "tests/test_rate_validation.py::test_monitoring_event_volume",
+  "tests/test_rate_validation.py::test_quote_count_per_version"
+]

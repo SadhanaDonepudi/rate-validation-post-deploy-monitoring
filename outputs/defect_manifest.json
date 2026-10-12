@@ -1,0 +1,334 @@
+{
+  "defect_count": 23,
+  "defects": [
+    {
+      "id": "DEF-01",
+      "category": "wrong factor",
+      "description": "Territory TX-02 factor transposed 1.24 -> 1.42 in v2 table.",
+      "element": "territory",
+      "affected": [
+        {
+          "key": "TX-02",
+          "deployed_value": 1.42,
+          "reference_value": 1.24
+        }
+      ]
+    },
+    {
+      "id": "DEF-02",
+      "category": "wrong factor",
+      "description": "Breed group BG-07 factor 1.32 -> 1.23 (transposed digits).",
+      "element": "breed",
+      "affected": [
+        {
+          "key": "BG-07",
+          "deployed_value": 1.23,
+          "reference_value": 1.32
+        }
+      ]
+    },
+    {
+      "id": "DEF-03",
+      "category": "wrong factor",
+      "description": "Age band 10+ factor 1.52 -> 1.25 (transposed digits).",
+      "element": "age_band",
+      "affected": [
+        {
+          "key": "10+",
+          "deployed_value": 1.25,
+          "reference_value": 1.52
+        }
+      ]
+    },
+    {
+      "id": "DEF-04",
+      "category": "wrong factor",
+      "description": "Plan Wellness+ factor 1.22 -> 1.12 (digit typo).",
+      "element": "plan",
+      "affected": [
+        {
+          "key": "Wellness+",
+          "deployed_value": 1.12,
+          "reference_value": 1.22
+        }
+      ]
+    },
+    {
+      "id": "DEF-05",
+      "category": "wrong factor",
+      "description": "Deductible $1000 factor 0.84 -> 0.48 (digit typo).",
+      "element": "deductible",
+      "affected": [
+        {
+          "key": "1000",
+          "deployed_value": 0.48,
+          "reference_value": 0.84
+        }
+      ]
+    },
+    {
+      "id": "DEF-06",
+      "category": "wrong factor",
+      "description": "Territory CA-01 factor 0.95 -> 0.59 (digit typo).",
+      "element": "territory",
+      "affected": [
+        {
+          "key": "CA-01",
+          "deployed_value": 0.59,
+          "reference_value": 0.95
+        }
+      ]
+    },
+    {
+      "id": "DEF-07",
+      "category": "mis-keyed territory",
+      "description": "IL-03's factor row (1.22) keyed as IL-02; IL-03 left with no row (engine default 1.00 applies).",
+      "element": "territory",
+      "affected": [
+        {
+          "key": "IL-02",
+          "deployed_value": 1.22,
+          "reference_value": 1.05
+        },
+        {
+          "key": "IL-03",
+          "deployed_value": 1.0,
+          "reference_value": 1.22
+        }
+      ]
+    },
+    {
+      "id": "DEF-08",
+      "category": "mis-keyed territory",
+      "description": "Territory codes NY-01/NY-02 swapped (factors 1.15/1.3).",
+      "element": "territory",
+      "affected": [
+        {
+          "key": "NY-01",
+          "deployed_value": 1.3,
+          "reference_value": 1.15
+        },
+        {
+          "key": "NY-02",
+          "deployed_value": 1.15,
+          "reference_value": 1.3
+        }
+      ]
+    },
+    {
+      "id": "DEF-09",
+      "category": "mis-keyed territory",
+      "description": "Territory codes FL-01/FL-02 swapped (factors 1.12/1.22).",
+      "element": "territory",
+      "affected": [
+        {
+          "key": "FL-01",
+          "deployed_value": 1.22,
+          "reference_value": 1.12
+        },
+        {
+          "key": "FL-02",
+          "deployed_value": 1.12,
+          "reference_value": 1.22
+        }
+      ]
+    },
+    {
+      "id": "DEF-10",
+      "category": "mis-keyed territory",
+      "description": "Territory codes GA-01/GA-02 swapped (factors 1.02/0.88).",
+      "element": "territory",
+      "affected": [
+        {
+          "key": "GA-01",
+          "deployed_value": 0.88,
+          "reference_value": 1.02
+        },
+        {
+          "key": "GA-02",
+          "deployed_value": 1.02,
+          "reference_value": 0.88
+        }
+      ]
+    },
+    {
+      "id": "DEF-11",
+      "category": "off-by-one tier",
+      "description": "Age band 7-9 lower bound 7 -> 8: age 7 falls into a tier gap and the engine leaves the quote UNRATED.",
+      "element": "age_band",
+      "affected": [
+        {
+          "key": "7-9",
+          "deployed_value": "UNRATED",
+          "reference_value": 1.2
+        }
+      ]
+    },
+    {
+      "id": "DEF-12",
+      "category": "off-by-one tier",
+      "description": "Age band 0-1 upper bound 1 -> 0: age 1 falls into a tier gap and the engine leaves the quote UNRATED.",
+      "element": "age_band",
+      "affected": [
+        {
+          "key": "0-1",
+          "deployed_value": "UNRATED",
+          "reference_value": 1.1
+        }
+      ]
+    },
+    {
+      "id": "DEF-13",
+      "category": "off-by-one tier",
+      "description": "Age band 4-6 upper bound 6 -> 5: age 6 falls into a tier gap and the engine leaves the quote UNRATED.",
+      "element": "age_band",
+      "affected": [
+        {
+          "key": "4-6",
+          "deployed_value": "UNRATED",
+          "reference_value": 1.05
+        }
+      ]
+    },
+    {
+      "id": "DEF-14",
+      "category": "swapped factors",
+      "description": "Breed factors BG-03 (1.05) and BG-04 (1.12) swapped.",
+      "element": "breed",
+      "affected": [
+        {
+          "key": "BG-03",
+          "deployed_value": 1.12,
+          "reference_value": 1.05
+        },
+        {
+          "key": "BG-04",
+          "deployed_value": 1.05,
+          "reference_value": 1.12
+        }
+      ]
+    },
+    {
+      "id": "DEF-15",
+      "category": "swapped factors",
+      "description": "Deductible factors $250 (1.12) and $500 (1.00) swapped.",
+      "element": "deductible",
+      "affected": [
+        {
+          "key": "250",
+          "deployed_value": 1.0,
+          "reference_value": 1.12
+        },
+        {
+          "key": "500",
+          "deployed_value": 1.12,
+          "reference_value": 1.0
+        }
+      ]
+    },
+    {
+      "id": "DEF-16",
+      "category": "missing row",
+      "description": "Territory OH-02 row deleted; engine default factor 1.00 applies instead of the manual 0.92.",
+      "element": "territory",
+      "affected": [
+        {
+          "key": "OH-02",
+          "deployed_value": 1.0,
+          "reference_value": 0.92
+        }
+      ]
+    },
+    {
+      "id": "DEF-17",
+      "category": "wrong factor",
+      "description": "Plan Accident-only factor 0.62 -> 0.26 (digit typo).",
+      "element": "plan",
+      "affected": [
+        {
+          "key": "Accident-only",
+          "deployed_value": 0.26,
+          "reference_value": 0.62
+        }
+      ]
+    },
+    {
+      "id": "DEF-18",
+      "category": "wrong factor",
+      "description": "Plan Comprehensive factor 1.00 -> 1.10 (digit typo).",
+      "element": "plan",
+      "affected": [
+        {
+          "key": "Comprehensive",
+          "deployed_value": 1.1,
+          "reference_value": 1.0
+        }
+      ]
+    },
+    {
+      "id": "DEF-19",
+      "category": "duplicate row",
+      "description": "Territory WA-01 appears twice; the conflicting second row carries factor 1.99 and wins under the engine's last-row-wins rule.",
+      "element": "territory",
+      "affected": [
+        {
+          "key": "WA-01",
+          "deployed_value": 1.99,
+          "reference_value": 1.08
+        }
+      ]
+    },
+    {
+      "id": "DEF-20",
+      "category": "wrong factor",
+      "description": "Base annual premium 480.00 -> 408.00 in the v2 table header; affects every v2 quote.",
+      "element": "base",
+      "affected": [
+        {
+          "key": "v2",
+          "deployed_value": 408.0,
+          "reference_value": 480.0
+        }
+      ]
+    },
+    {
+      "id": "DEF-21",
+      "category": "wrong factor",
+      "description": "Breed group BG-12 factor 1.27 -> 1.72 (transposed digits).",
+      "element": "breed",
+      "affected": [
+        {
+          "key": "BG-12",
+          "deployed_value": 1.72,
+          "reference_value": 1.27
+        }
+      ]
+    },
+    {
+      "id": "DEF-22",
+      "category": "wrong factor",
+      "description": "Territory OH-01 factor 1.10 -> 1.01 (transposed digits).",
+      "element": "territory",
+      "affected": [
+        {
+          "key": "OH-01",
+          "deployed_value": 1.01,
+          "reference_value": 1.1
+        }
+      ]
+    },
+    {
+      "id": "DEF-23",
+      "category": "wrong factor",
+      "description": "Age band 2-3 factor 1.00 -> 1.09 (digit typo).",
+      "element": "age_band",
+      "affected": [
+        {
+          "key": "2-3",
+          "deployed_value": 1.09,
+          "reference_value": 1.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,749 @@
+{
+  "version": "v2",
+  "engine_tables": "/home/hatch/workspace/github-projects/rate-validation-post-deploy-monitoring/data/rate_tables/defective/v2",
+  "quotes_tested": 50000,
+  "mismatches": 50000,
+  "match_rate": 0.0,
+  "distinct_signatures": 29,
+  "signatures": [
+    {
+      "element": "base",
+      "key": "v2",
+      "deployed_value": 408.0,
+      "reference_value": 480.0,
+      "quote_count": 50000,
+      "example_quotes": [
+        "Q-000001",
+        "Q-000002",
+        "Q-000003"
+      ]
+    },
+    {
+      "element": "plan",
+      "key": "Comprehensive",
+      "deployed_value": 1.1,
+      "reference_value": 1.0,
+      "quote_count": 16808,
+      "example_quotes": [
+        "Q-000007",
+        "Q-000016",
+        "Q-000019"
+      ]
+    },
+    {
+      "element": "deductible",
+      "key": "1000",
+      "deployed_value": 0.48,
+      "reference_value": 0.84,
+      "quote_count": 16769,
+      "example_quotes": [
+        "Q-000002",
+        "Q-000003",
+        "Q-000004"
+      ]
+    },
+    {
+      "element": "plan",
+      "key": "Accident-only",
+      "deployed_value": 0.26,
+      "reference_value": 0.62,
+      "quote_count": 16697,
+      "example_quotes": [
+        "Q-000002",
+        "Q-000005",
+        "Q-000006"
+      ]
+    },
+    {
+      "element": "deductible",
+      "key": "250",
+      "deployed_value": 1.0,
+      "reference_value": 1.12,
+      "quote_count": 16670,
+      "example_quotes": [
+        "Q-000001",
+        "Q-000008",
+        "Q-000010"
+      ]
+    },
+    {
+      "element": "deductible",
+      "key": "500",
+      "deployed_value": 1.12,
+      "reference_value": 1.0,
+      "quote_count": 16561,
+      "example_quotes": [
+        "Q-000005",
+        "Q-000011",
+        "Q-000012"
+      ]
+    },
+    {
+      "element": "plan",
+      "key": "Wellness+",
+      "deployed_value": 1.12,
+      "reference_value": 1.22,
+      "quote_count": 16495,
+      "example_quotes": [
+        "Q-000001",
+        "Q-000003",
+        "Q-000004"
+      ]
+    },
+    {
+      "element": "age_band",
+      "key": "10+",
+      "deployed_value": 1.25,
+      "reference_value": 1.52,
+      "quote_count": 16370,
+      "example_quotes": [
+        "Q-000001",
+        "Q-000014",
+        "Q-000016"
+      ]
+    },
+    {
+      "element": "age_band",
+      "key": "2-3",
+      "deployed_value": 1.09,
+      "reference_value": 1.0,
+      "quote_count": 7242,
+      "example_quotes": [
+        "Q-000005",
+        "Q-000036",
+        "Q-000042"
+      ]
+    },
+    {
+      "element": "age_band",
+      "key": "0-1",
+      "deployed_value": "UNRATED",
+      "reference_value": 1.1,
+      "quote_count": 3617,
+      "example_quotes": [
+        "Q-000003",
+        "Q-000004",
+        "Q-000008"
+      ]
+    },
+    {
+      "element": "age_band",
+      "key": "7-9",
+      "deployed_value": "UNRATED",
+      "reference_value": 1.2,
+      "quote_count": 3211,
+      "example_quotes": [
+        "Q-000057",
+        "Q-000076",
+        "Q-000084"
+      ]
+    },
+    {
+      "element": "age_band",
+      "key": "4-6",
+      "deployed_value": "UNRATED",
+      "reference_value": 1.05,
+      "quote_count": 3204,
+      "example_quotes": [
+        "Q-000002",
+        "Q-000006",
+        "Q-000024"
+      ]
+    },
+    {
+      "element": "breed",
+      "key": "BG-03",
+      "deployed_value": 1.12,
+      "reference_value": 1.05,
+      "quote_count": 3169,
+      "example_quotes": [
+        "Q-000004",
+        "Q-000017",
+        "Q-000029"
+      ]
+    },
+    {
+      "element": "breed",
+      "key": "BG-12",
+      "deployed_value": 1.72,
+      "reference_value": 1.27,
+      "quote_count": 3154,
+      "example_quotes": [
+        "Q-000009",
+        "Q-000040",
+        "Q-000129"
+      ]
+    },
+    {
+      "element": "breed",
+      "key": "BG-07",
+      "deployed_value": 1.23,
+      "reference_value": 1.32,
+      "quote_count": 3105,
+      "example_quotes": [
+        "Q-000007",
+        "Q-000015",
+        "Q-000018"
+      ]
+    },
+    {
+      "element": "breed",
+      "key": "BG-04",
+      "deployed_value": 1.05,
+      "reference_value": 1.12,
+      "quote_count": 3003,
+      "example_quotes": [
+        "Q-000043",
+        "Q-000047",
+        "Q-000056"
+      ]
+    },
+    {
+      "element": "territory",
+      "key": "GA-01",
+      "deployed_value": 0.88,
+      "reference_value": 1.02,
+      "quote_count": 2891,
+      "example_quotes": [
+        "Q-000006",
+        "Q-000014",
+        "Q-000032"
+      ]
+    },
+    {
+      "element": "territory",
+      "key": "FL-02",
+      "deployed_value": 1.12,
+      "reference_value": 1.22,
+      "quote_count": 2832,
+      "example_quotes": [
+        "Q-000013",
+        "Q-000027",
+        "Q-000039"
+      ]
+    },
+    {
+      "element": "territory",
+      "key": "CA-01",
+      "deployed_value": 0.59,
+      "reference_value": 0.95,
+      "quote_count": 2829,
+      "example_quotes": [
+        "Q-000005",
+        "Q-000017",
+        "Q-000055"
+      ]
+    },
+    {
+      "element": "territory",
+      "key": "GA-02",
+      "deployed_value": 1.02,
+      "reference_value": 0.88,
+      "quote_count": 2829,
+      "example_quotes": [
+        "Q-000018",
+        "Q-000019",
+        "Q-000023"
+      ]
+    },
+    {
+      "element": "territory",
+      "key": "IL-03",
+      "deployed_value": 1.0,
+      "reference_value": 1.22,
+      "quote_count": 2812,
+      "example_quotes": [
+        "Q-000007",
+        "Q-000049",
+        "Q-000081"
+      ]
+    },
+    {
+      "element": "territory",
+      "key": "WA-01",
+      "deployed_value": 1.99,
+      "reference_value": 1.08,
+      "quote_count": 2797,
+      "example_quotes": [
+        "Q-000020",
+        "Q-000025",
+        "Q-000033"
+      ]
+    },
+    {
+      "element": "territory",
+      "key": "NY-02",
+      "deployed_value": 1.15,
+      "reference_value": 1.3,
+      "quote_count": 2777,
+      "example_quotes": [
+        "Q-000011",
+        "Q-000090",
+        "Q-000103"
+      ]
+    },
+    {
+      "element": "territory",
+      "key": "NY-01",
+      "deployed_value": 1.3,
+      "reference_value": 1.15,
+      "quote_count": 2762,
+      "example_quotes": [
+        "Q-000004",
+        "Q-000010",
+        "Q-000034"
+      ]
+    },
+    {
+      "element": "territory",
+      "key": "TX-02",
+      "deployed_value": 1.42,
+      "reference_value": 1.24,
+      "quote_count": 2747,
+      "example_quotes": [
+        "Q-000008",
+        "Q-000009",
+        "Q-000068"
+      ]
+    },
+    {
+      "element": "territory",
+      "key": "OH-01",
+      "deployed_value": 1.01,
+      "reference_value": 1.1,
+      "quote_count": 2736,
+      "example_quotes": [
+        "Q-000044",
+        "Q-000047",
+        "Q-000054"
+      ]
+    },
+    {
+      "element": "territory",
+      "key": "IL-02",
+      "deployed_value": 1.22,
+      "reference_value": 1.05,
+      "quote_count": 2732,
+      "example_quotes": [
+        "Q-000076",
+        "Q-000114",
+        "Q-000139"
+      ]
+    },
+    {
+      "element": "territory",
+      "key": "FL-01",
+      "deployed_value": 1.22,
+      "reference_value": 1.12,
+      "quote_count": 2731,
+      "example_quotes": [
+        "Q-000040",
+        "Q-000043",
+        "Q-000080"
+      ]
+    },
+    {
+      "element": "territory",
+      "key": "OH-02",
+      "deployed_value": 1.0,
+      "reference_value": 0.92,
+      "quote_count": 2720,
+      "example_quotes": [
+        "Q-000003",
+        "Q-000021",
+        "Q-000046"
+      ]
+    }
+  ],
+  "defects_total": 23,
+  "defects_caught": 23,
+  "defects": [
+    {
+      "id": "DEF-01",
+      "category": "wrong factor",
+      "description": "Territory TX-02 factor transposed 1.24 -> 1.42 in v2 table.",
+      "caught": true,
+      "affected": [
+        {
+          "key": "TX-02",
+          "deployed_value": 1.42,
+          "reference_value": 1.24,
+          "matched": true,
+          "quote_count": 2747
+        }
+      ]
+    },
+    {
+      "id": "DEF-02",
+      "category": "wrong factor",
+      "description": "Breed group BG-07 factor 1.32 -> 1.23 (transposed digits).",
+      "caught": true,
+      "affected": [
+        {
+          "key": "BG-07",
+          "deployed_value": 1.23,
+          "reference_value": 1.32,
+          "matched": true,
+          "quote_count": 3105
+        }
+      ]
+    },
+    {
+      "id": "DEF-03",
+      "category": "wrong factor",
+      "description": "Age band 10+ factor 1.52 -> 1.25 (transposed digits).",
+      "caught": true,
+      "affected": [
+        {
+          "key": "10+",
+          "deployed_value": 1.25,
+          "reference_value": 1.52,
+          "matched": true,
+          "quote_count": 16370
+        }
+      ]
+    },
+    {
+      "id": "DEF-04",
+      "category": "wrong factor",
+      "description": "Plan Wellness+ factor 1.22 -> 1.12 (digit typo).",
+      "caught": true,
+      "affected": [
+        {
+          "key": "Wellness+",
+          "deployed_value": 1.12,
+          "reference_value": 1.22,
+          "matched": true,
+          "quote_count": 16495
+        }
+      ]
+    },
+    {
+      "id": "DEF-05",
+      "category": "wrong factor",
+      "description": "Deductible $1000 factor 0.84 -> 0.48 (digit typo).",
+      "caught": true,
+      "affected": [
+        {
+          "key": "1000",
+          "deployed_value": 0.48,
+          "reference_value": 0.84,
+          "matched": true,
+          "quote_count": 16769
+        }
+      ]
+    },
+    {
+      "id": "DEF-06",
+      "category": "wrong factor",
+      "description": "Territory CA-01 factor 0.95 -> 0.59 (digit typo).",
+      "caught": true,
+      "affected": [
+        {
+          "key": "CA-01",
+          "deployed_value": 0.59,
+          "reference_value": 0.95,
+          "matched": true,
+          "quote_count": 2829
+        }
+      ]
+    },
+    {
+      "id": "DEF-07",
+      "category": "mis-keyed territory",
+      "description": "IL-03's factor row (1.22) keyed as IL-02; IL-03 left with no row (engine default 1.00 applies).",
+      "caught": true,
+      "affected": [
+        {
+          "key": "IL-02",
+          "deployed_value": 1.22,
+          "reference_value": 1.05,
+          "matched": true,
+          "quote_count": 2732
+        },
+        {
+          "key": "IL-03",
+          "deployed_value": 1.0,
+          "reference_value": 1.22,
+          "matched": true,
+          "quote_count": 2812
+        }
+      ]
+    },
+    {
+      "id": "DEF-08",
+      "category": "mis-keyed territory",
+      "description": "Territory codes NY-01/NY-02 swapped (factors 1.15/1.3).",
+      "caught": true,
+      "affected": [
+        {
+          "key": "NY-01",
+          "deployed_value": 1.3,
+          "reference_value": 1.15,
+          "matched": true,
+          "quote_count": 2762
+        },
+        {
+          "key": "NY-02",
+          "deployed_value": 1.15,
+          "reference_value": 1.3,
+          "matched": true,
+          "quote_count": 2777
+        }
+      ]
+    },
+    {
+      "id": "DEF-09",
+      "category": "mis-keyed territory",
+      "description": "Territory codes FL-01/FL-02 swapped (factors 1.12/1.22).",
+      "caught": true,
+      "affected": [
+        {
+          "key": "FL-01",
+          "deployed_value": 1.22,
+          "reference_value": 1.12,
+          "matched": true,
+          "quote_count": 2731
+        },
+        {
+          "key": "FL-02",
+          "deployed_value": 1.12,
+          "reference_value": 1.22,
+          "matched": true,
+          "quote_count": 2832
+        }
+      ]
+    },
+    {
+      "id": "DEF-10",
+      "category": "mis-keyed territory",
+      "description": "Territory codes GA-01/GA-02 swapped (factors 1.02/0.88).",
+      "caught": true,
+      "affected": [
+        {
+          "key": "GA-01",
+          "deployed_value": 0.88,
+          "reference_value": 1.02,
+          "matched": true,
+          "quote_count": 2891
+        },
+        {
+          "key": "GA-02",
+          "deployed_value": 1.02,
+          "reference_value": 0.88,
+          "matched": true,
+          "quote_count": 2829
+        }
+      ]
+    },
+    {
+      "id": "DEF-11",
+      "category": "off-by-one tier",
+      "description": "Age band 7-9 lower bound 7 -> 8: age 7 falls into a tier gap and the engine leaves the quote UNRATED.",
+      "caught": true,
+      "affected": [
+        {
+          "key": "7-9",
+          "deployed_value": "UNRATED",
+          "reference_value": 1.2,
+          "matched": true,
+          "quote_count": 3211
+        }
+      ]
+    },
+    {
+      "id": "DEF-12",
+      "category": "off-by-one tier",
+      "description": "Age band 0-1 upper bound 1 -> 0: age 1 falls into a tier gap and the engine leaves the quote UNRATED.",
+      "caught": true,
+      "affected": [
+        {
+          "key": "0-1",
+          "deployed_value": "UNRATED",
+          "reference_value": 1.1,
+          "matched": true,
+          "quote_count": 3617
+        }
+      ]
+    },
+    {
+      "id": "DEF-13",
+      "category": "off-by-one tier",
+      "description": "Age band 4-6 upper bound 6 -> 5: age 6 falls into a tier gap and the engine leaves the quote UNRATED.",
+      "caught": true,
+      "affected": [
+        {
+          "key": "4-6",
+          "deployed_value": "UNRATED",
+          "reference_value": 1.05,
+          "matched": true,
+          "quote_count": 3204
+        }
+      ]
+    },
+    {
+      "id": "DEF-14",
+      "category": "swapped factors",
+      "description": "Breed factors BG-03 (1.05) and BG-04 (1.12) swapped.",
+      "caught": true,
+      "affected": [
+        {
+          "key": "BG-03",
+          "deployed_value": 1.12,
+          "reference_value": 1.05,
+          "matched": true,
+          "quote_count": 3169
+        },
+        {
+          "key": "BG-04",
+          "deployed_value": 1.05,
+          "reference_value": 1.12,
+          "matched": true,
+          "quote_count": 3003
+        }
+      ]
+    },
+    {
+      "id": "DEF-15",
+      "category": "swapped factors",
+      "description": "Deductible factors $250 (1.12) and $500 (1.00) swapped.",
+      "caught": true,
+      "affected": [
+        {
+          "key": "250",
+          "deployed_value": 1.0,
+          "reference_value": 1.12,
+          "matched": true,
+          "quote_count": 16670
+        },
+        {
+          "key": "500",
+          "deployed_value": 1.12,
+          "reference_value": 1.0,
+          "matched": true,
+          "quote_count": 16561
+        }
+      ]
+    },
+    {
+      "id": "DEF-16",
+      "category": "missing row",
+      "description": "Territory OH-02 row deleted; engine default factor 1.00 applies instead of the manual 0.92.",
+      "caught": true,
+      "affected": [
+        {
+          "key": "OH-02",
+          "deployed_value": 1.0,
+          "reference_value": 0.92,
+          "matched": true,
+          "quote_count": 2720
+        }
+      ]
+    },
+    {
+      "id": "DEF-17",
+      "category": "wrong factor",
+      "description": "Plan Accident-only factor 0.62 -> 0.26 (digit typo).",
+      "caught": true,
+      "affected": [
+        {
+          "key": "Accident-only",
+          "deployed_value": 0.26,
+          "reference_value": 0.62,
+          "matched": true,
+          "quote_count": 16697
+        }
+      ]
+    },
+    {
+      "id": "DEF-18",
+      "category": "wrong factor",
+      "description": "Plan Comprehensive factor 1.00 -> 1.10 (digit typo).",
+      "caught": true,
+      "affected": [
+        {
+          "key": "Comprehensive",
+          "deployed_value": 1.1,
+          "reference_value": 1.0,
+          "matched": true,
+          "quote_count": 16808
+        }
+      ]
+    },
+    {
+      "id": "DEF-19",
+      "category": "duplicate row",
+      "description": "Territory WA-01 appears twice; the conflicting second row carries factor 1.99 and wins under the engine's last-row-wins rule.",
+      "caught": true,
+      "affected": [
+        {
+          "key": "WA-01",
+          "deployed_value": 1.99,
+          "reference_value": 1.08,
+          "matched": true,
+          "quote_count": 2797
+        }
+      ]
+    },
+    {
+      "id": "DEF-20",
+      "category": "wrong factor",
+      "description": "Base annual premium 480.00 -> 408.00 in the v2 table header; affects every v2 quote.",
+      "caught": true,
+      "affected": [
+        {
+          "key": "v2",
+          "deployed_value": 408.0,
+          "reference_value": 480.0,
+          "matched": true,
+          "quote_count": 50000
+        }
+      ]
+    },
+    {
+      "id": "DEF-21",
+      "category": "wrong factor",
+      "description": "Breed group BG-12 factor 1.27 -> 1.72 (transposed digits).",
+      "caught": true,
+      "affected": [
+        {
+          "key": "BG-12",
+          "deployed_value": 1.72,
+          "reference_value": 1.27,
+          "matched": true,
+          "quote_count": 3154
+        }
+      ]
+    },
+    {
+      "id": "DEF-22",
+      "category": "wrong factor",
+      "description": "Territory OH-01 factor 1.10 -> 1.01 (transposed digits).",
+      "caught": true,
+      "affected": [
+        {
+          "key": "OH-01",
+          "deployed_value": 1.01,
+          "reference_value": 1.1,
+          "matched": true,
+          "quote_count": 2736
+        }
+      ]
+    },
+    {
+      "id": "DEF-23",
+      "category": "wrong factor",
+      "description": "Age band 2-3 factor 1.00 -> 1.09 (digit typo).",
+      "caught": true,
+      "affected": [
+        {
+          "key": "2-3",
+          "deployed_value": 1.09,
+          "reference_value": 1.0,
+          "matched": true,
+          "quote_count": 7242
+        }
+      ]
+    }
+  ]
+}
